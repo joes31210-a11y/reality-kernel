@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reality Kernel</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-black text-white p-8 font-sans antialiased">
+  <div class="max-w-6xl mx-auto space-y-8">
+    <div class="text-center space-y-4">
+      <h1 class="text-5xl font-bold tracking-tight bg-gradient-to-r from-white via-zinc-200 to-zinc-500 bg-clip-text text-transparent">Reality Kernel</h1>
+      <p class="text-zinc-400 text-lg max-w-3xl mx-auto">Un núcleo conceptual inspirado en la idea de una realidad programable, donde la información, los patrones y la conciencia evolucionan en tiempo real.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="rounded-3xl border border-zinc-800 bg-zinc-950 p-6 shadow-2xl hover:scale-[1.02] transition-transform duration-300">
+        <h2 class="text-2xl font-semibold mb-3">Información</h2>
+        <p class="text-zinc-400 leading-relaxed">Datos, ideas y experiencias captadas del entorno.</p>
+      </div>
+      <div class="rounded-3xl border border-zinc-800 bg-zinc-950 p-6 shadow-2xl hover:scale-[1.02] transition-transform duration-300">
+        <h2 class="text-2xl font-semibold mb-3">Patrones</h2>
+        <p class="text-zinc-400 leading-relaxed">Repeticiones detectadas dentro de la información.</p>
+      </div>
+      <div class="rounded-3xl border border-zinc-800 bg-zinc-950 p-6 shadow-2xl hover:scale-[1.02] transition-transform duration-300">
+        <h2 class="text-2xl font-semibold mb-3">Enfoque</h2>
+        <p class="text-zinc-400 leading-relaxed">La atención amplifica lo que se ejecuta constantemente.</p>
+      </div>
+      <div class="rounded-3xl border border-zinc-800 bg-zinc-950 p-6 shadow-2xl hover:scale-[1.02] transition-transform duration-300">
+        <h2 class="text-2xl font-semibold mb-3">Creación</h2>
+        <p class="text-zinc-400 leading-relaxed">Pensamiento + acción = resultado materializado.</p>
+      </div>
+      <div class="rounded-3xl border border-zinc-800 bg-zinc-950 p-6 shadow-2xl hover:scale-[1.02] transition-transform duration-300 md:col-span-2 lg:col-span-1">
+        <h2 class="text-2xl font-semibold mb-3">Evolución</h2>
+        <p class="text-zinc-400 leading-relaxed">El sistema aprende mediante retroalimentación continua.</p>
+      </div>
+    </div>
+    <div class="rounded-3xl border border-zinc-800 bg-zinc-950 p-6">
+      <h2 class="text-3xl font-bold mb-6">Núcleo del Sistema</h2>
+      <pre class="overflow-x-auto text-sm text-green-400 leading-7 p-4 rounded-xl bg-black border border-zinc-900"><code>class RealityKernel:
+
+    def __init__(self):
+        self.information = []
+        self.patterns = []
+        self.consciousness = 0
+
+    def observe(self, data):
+        self.information.append(data)
+        return self.detect_patterns()
+
+    def detect_patterns(self):
+        return [x for x in self.information if self.is_repeating(x)]
+
+    def is_repeating(self, x):
+        return self.information.count(x) > 1
+
+    def focus(self, intention):
+        amplified = intention * self.attention()
+        return amplified
+
+    def attention(self):
+        return self.consciousness + len(self.patterns)
+
+    def create(self, thought, action):
+        reality_output = thought + action + self.focus(thought)
+        return reality_output
+
+    def evolve(self, feedback):
+        self.patterns.append(feedback)
+        self.consciousness += 1</code></pre>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="rounded-3xl border border-zinc-800 bg-zinc-950 p-6">
+        <h2 class="text-2xl font-bold mb-4">Simulación del Sistema</h2>
+        <div class="space-y-3">
+          <div class="bg-black border border-zinc-800 rounded-2xl px-4 py-3 text-green-400 font-mono">&gt; Observando patrones...</div>
+          <div class="bg-black border border-zinc-800 rounded-2xl px-4 py-3 text-green-400 font-mono">&gt; Detectando repeticiones...</div>
+          <div class="bg-black border border-zinc-800 rounded-2xl px-4 py-3 text-green-400 font-mono">&gt; Amplificando enfoque...</div>
+          <div class="bg-black border border-zinc-800 rounded-2xl px-4 py-3 text-green-400 font-mono">&gt; Transformando pensamiento en acción...</div>
+          <div class="bg-black border border-zinc-800 rounded-2xl px-4 py-3 text-green-400 font-mono">&gt; Evolucionando conciencia del sistema...</div>
+        </div>
+      </div>
+      <div class="rounded-3xl border border-zinc-800 bg-zinc-950 p-6 flex flex-col justify-between">
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Interpretación</h2>
+          <p class="text-zinc-400 leading-relaxed">Esta aplicación no representa magia ni poderes sobrenaturales. Es una metáfora tecnológica y filosófica sobre cómo los humanos perciben patrones, enfocan atención y transforman ideas en resultados.</p>
+        </div>
+        <div class="mt-8 rounded-2xl bg-black border border-zinc-800 p-5">
+          <p class="text-green-400 font-mono text-sm">INPUT → OBSERVE → PATTERN → FOCUS → CREATE → EVOLVE</p>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center text-zinc-600 text-sm pt-8 pb-4">Reality Kernel v1.0 • App Progresiva</footer>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
