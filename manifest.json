@@ -1,0 +1,15 @@
+{
+  "name": "Reality Kernel",
+  "short_name": "RealityKernel",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3437/3437756.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
